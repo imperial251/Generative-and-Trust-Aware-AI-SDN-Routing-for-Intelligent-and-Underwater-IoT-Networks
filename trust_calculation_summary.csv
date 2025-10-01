@@ -1,0 +1,5 @@
+Trust Dimension,Formula,Key Parameters,Computation,Update Frequency
+Direct Trust,"T_d = α×S(i,j,t) + (1-α)×T_d(t-1)","α=0.3 (learning rate), ε=0.01 (smoothing)",O(1),Per packet
+Indirect Trust,"T_i = Σ[T_d(i,k)×T_d(k,j)×ρ_k]","β=2.0 (credibility exp.), γ=0.2 (diversity)",O(|N|),Per epoch
+Energy Trust,T_e = w_b×B_norm + w_c×C_norm + w_e×E_eff,"w_b=0.4, w_c=0.3, w_e=0.3 (energy weights)",O(1),Per minute
+Composite Trust,T_c = Σ[w_k×T_k] (then compare vs threshold),"Domain thresholds: HC=0.75, TR=0.65, UW=0.55",O(1),Real-time

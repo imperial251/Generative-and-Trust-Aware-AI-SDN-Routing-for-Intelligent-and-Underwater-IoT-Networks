@@ -1,0 +1,4 @@
+Domain,Trust Threshold,Max Latency,Direct Weight,Indirect Weight,Energy Weight,Key Requirements
+Healthcare IoT,0.75,5ms,0.4,0.3,0.3,"HIPAA compliance, patient safety"
+Transportation,0.65,15ms,0.45,0.25,0.3,"V2X reliability, mobility support"
+Underwater WSN,0.55,100ms,0.35,0.35,0.3,"Energy efficiency, harsh environment"

@@ -1,0 +1,5 @@
+Action,Healthcare (≥0.75),Transportation (≥0.65),Underwater (≥0.55),SDN Response
+ALLOW,T ≥ 0.75,T ≥ 0.65,T ≥ 0.55,Forward normally
+MONITOR,0.65 ≤ T < 0.75,0.55 ≤ T < 0.65,0.45 ≤ T < 0.55,Enhanced logging
+REROUTE,0.50 ≤ T < 0.65,0.40 ≤ T < 0.55,0.30 ≤ T < 0.45,Find backup path
+BLOCK,T < 0.50,T < 0.40,T < 0.30,Drop packets
